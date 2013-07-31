@@ -1,9 +1,5 @@
 from ubuntu:12.10
 
-# create me user
-
-run if ! grep -qE "^me:" /etc/passwd ;then useradd -m -s /bin/bash me; fi
-
 # update system and install dependencies
 
 run apt-get update
