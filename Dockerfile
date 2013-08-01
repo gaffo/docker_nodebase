@@ -1,5 +1,9 @@
 from ubuntu:12.10
 
+# set your host up as the apt cache for speed
+
+add 30proxy /etc/apt/apt.conf.d/30proxy
+
 # update system and install dependencies
 
 run apt-get update
